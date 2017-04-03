@@ -1,34 +1,30 @@
-# Botnet
-IRC bot written in Python.
+# Botnet بوتنت 
+هناك في هذا المشروع 
+بوتنتين 
+بوتنت بايثون 
+بوتنت باتش
+اختر ماتشاء
+انا افضل البايثون
+لانه افضل
 
-Botnet implements nearly all core functionality in a form of modules which can
-be loaded and unloaded at will and communicate with one another using signals.
-Thanks to that design a module which encounters serious issues does not affect
-the execution of other modules. Furthermore all features of the bot can be
-enabled and disabled at will and the modules can be updated without restarting
-the entire bot and reconnecting to the IRC network simply by reloading a module.
-It is possible to use built-in modules or create easy to load and integrate
-user-maintained external modules distributed in a form of Python packages.
 
-## Installation
+## Installation التنصيب
 
     pip install git+https://github.com/boreq/botnet
+  
 
-## Usage
+## Usage الاستخدام
 
     botnet --help
     botnet run --help
     botnet run /path/to/config.json
 
-## Available modules
 
-To see all available modules navigate to `botnet.modules.builtin` directory.
-Each module is provided with a comment containing a description and an example
-config snippet.
 
-## Configuration
-Config snippets from the module description can be added to the `module_config`
-key in the config file. This is the general structure of the config file:
+## الترتيب
+
+يمديك إضافة مقتطفات التكوين من وصف الوحدة النمطية إلى `module_config`
+مفتاح في ملف التكوين. هذا هو الهيكل العام لملف التكوين:
 
     {
         "modules": ["module_name1", "module_name2"],
@@ -41,12 +37,13 @@ key in the config file. This is the general structure of the config file:
         }
     }
 
-All builtin modules use the namespace `botnet`. Most modules are based on the
-`BaseResponder` module, so to change the default command prefix alter the
-`module_config.botnet.base_responder.command_prefix` configuration key. See the
-example config for details.
 
-## Example config
+تستخدم كافة الوحدات النمطية مدمج مساحة الاسم `botnet`. وتستند معظم وحدات على
+`BaseResponder` وحدة، وذلك لتغيير بادئة الأمر الافتراضي تغيير
+`module_config.botnet.base_responder.command_prefix` مفتاح التكوين. انظر
+مثال لتكوين التفاصيل.
+
+## Example config مثال التــرتيــب
 
     {
         "modules": ["irc", "meta"],
@@ -73,3 +70,24 @@ example config for details.
             }
         }
     }
+    
+#BATCH Version نسخة الباتش
+
+للتشغيل السريع
+افتح مجلد
+bots
+انسخ الامر التالي الى جميع البوتات
+
+
+وهم 14 بوت
+
+@ECHO off
+color 04
+ping -t victim -l packages
+
+ We are Anonymous.
+We are Legion.
+We do not forgive.
+We do not forget.
+Expect us.
+![alt tag](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO2r44agGb_DleJVZGMrbn6G1djgMGrRyUo_kflBhHYfyn0JzH)
